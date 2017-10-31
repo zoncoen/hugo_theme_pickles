@@ -1,8 +1,8 @@
-# Pickles [![Build Status](https://travis-ci.org/mismith0227/hugo_theme_pickles.svg?branch=master)](https://travis-ci.org/mismith0227/hugo_theme_pickles) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mismith0227/hugo_theme_pickles/blob/master/license.md) [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+# Pickles [![Build Status](https://travis-ci.org/zoncoen/hugo_theme_pickles.svg?branch=master)](https://travis-ci.org/zoncoen/hugo_theme_pickles) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/zoncoen/hugo_theme_pickles/blob/master/license.md) [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Pickles is a modern, simple and beautiful Hugo theme.
 
-![screenshot](https://github.com/mismith0227/hugo_theme_pickles/blob/master/images/screenshot.png)
+![screenshot](https://github.com/zoncoen/hugo_theme_pickles/blob/master/images/screenshot.png)
 
 ## Overview
 
@@ -36,12 +36,12 @@ In your hugo site directory, run:
 ```shell
 $ mkdir themes
 $ cd themes
-$ git clone -b release https://github.com/mismith0227/hugo_theme_pickles
+$ git clone -b release https://github.com/zoncoen/hugo_theme_pickles
 ```
 
 Or download it from the release branch
 
-[release](https://github.com/mismith0227/hugo_theme_pickles/tree/release)
+[release](https://github.com/zoncoen/hugo_theme_pickles/tree/release)
 
 ## Usage
 
@@ -56,7 +56,7 @@ $ hugo server -t hugo_theme_pickles -w -D
 You may specify following options in `config.toml` of your site to make use of
 this theme's features.
 
-For getting started with Pickles, copy the [config.toml](https://github.com/mismith0227/hugo_theme_pickles/blob/master/exampleSite/config.toml) file from the exampleSite directory inside Pickles’s repository to your site repository.
+For getting started with Pickles, copy the [config.toml](https://github.com/zoncoen/hugo_theme_pickles/blob/master/exampleSite/config.toml) file from the exampleSite directory inside Pickles’s repository to your site repository.
 
 ```shell
 $ cp themes/hugo_theme_pickles/exampleSite/config.toml .
@@ -68,7 +68,7 @@ Now, you can start editing this file and add your own information!
 
 Pull requests, bug fixes and new features are welcome!
 
-Please create feature branches from [develop](https://github.com/mismith0227/hugo_theme_pickles/tree/develop) and submit a PR for any change.
+Please create feature branches from [develop](https://github.com/zoncoen/hugo_theme_pickles/tree/develop) and submit a PR for any change.
 
 ## Development
 

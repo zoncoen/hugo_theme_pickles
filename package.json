@@ -10,7 +10,7 @@
     "build": "gulp build --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "mismith0227",
+  "author": "zoncoen",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
