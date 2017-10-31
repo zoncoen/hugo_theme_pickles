@@ -35,9 +35,13 @@ yarn.lock
 !/exampleSite/content
 !/exampleSite/static" > .gitignore
 
+openssl aes-256-cbc -K $encrypted_58ce1a42e263_key -iv $encrypted_58ce1a42e263_iv -in .travis_key.enc -out ~/.ssh/id_rsa -d
+chmod 600 ~/.ssh/id_rsa
+echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+git config --global user.name "Travis CI"
+git config --global user.email "travis@example.com"
+
 git init
-git config user.name "Travis CI"
-git config user.email "travis@example.com"
 git add .
-git commit --quiet -m "Deploy from travis"
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:release > /dev/null 2>&1
+git commit --quiet -m "Deploy from Travis CI (JOB ${TRAVIS_JOB_NUMBER})"
+git push --force "${GH_REF}" master:release
