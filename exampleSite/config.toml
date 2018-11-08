@@ -3,6 +3,7 @@ languageCode = "en-us"
 Title = "Your site title"
 # Copyright notice. This is displayer in the footer.
 copyright = "&copy; Copyright notice"
+custom_css = "/static/css/custom.css"
 
 [params]
   paginate = 10
@@ -51,7 +52,7 @@ copyright = "&copy; Copyright notice"
 
 [[menu.main]]
     identifier = "theme"
-    name = "theme"
+    name = "/theme"
     weight = 3
 
 [[menu.main]]
@@ -68,5 +69,30 @@ copyright = "&copy; Copyright notice"
 
 [[menu.main]]
     name = "Tags"
-    url = "tags"
+    url = "/tags"
     weight = 4
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"

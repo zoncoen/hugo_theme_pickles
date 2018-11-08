@@ -2,9 +2,14 @@
 @import "foundation/variable/breakpoint.css";
 @import "foundation/variable/color.css";
 @import "foundation/variable/font-family.css";
-@import "foundation/lib/zoom.css";
+@import "zoom.js/css/zoom.css";
+@import "slick-carousel/slick/slick.css";
+@import "foundation/lib/slick-custom.css";
 @import "foundation/base/normalize.css";
 @import "foundation/base/base.css";
+
+/* fonts */
+@import "fonts/opensans.css";
 
 /* layout */
 @import "layout/header.css";
@@ -32,6 +37,7 @@
 @import "object/project/article.css";
 @import "object/project/notfound.css";
 @import "object/project/screen-reader-text.css";
+@import "object/project/related.css";
 
 @import "object/utility/display.css";
 @import "object/utility/align.css";

@@ -30,11 +30,6 @@ gulp.task('css', () => {
 // webpack
 // =====================================================
 gulp.task('webpack', () => {
-  if (config.envProduction) {
-    webpackConfig.plugins.push(new webpack.optimize.UglifyJsPlugin())
-  } else {
-    webpackConfig.devtool = 'source-map'
-  }
   return gulp
     .src(config.tasks.webpack.src)
     .pipe(plumber())
@@ -49,6 +44,15 @@ gulp.task('image', () => {
     .src(config.tasks.images.src)
     .pipe(image())
     .pipe(gulp.dest(config.tasks.images.dest))
+})
+
+// Font
+// =====================================================
+gulp.task('font', () => {
+  return gulp
+    .src(config.tasks.fonts.src)
+    .pipe(image())
+    .pipe(gulp.dest(config.tasks.fonts.dest))
 })
 
 // SVG
@@ -93,6 +97,7 @@ gulp.task('default', (cb) => {
     'css',
     'webpack',
     'image',
+    'font',
     'watch',
     'svg:rename',
     cb

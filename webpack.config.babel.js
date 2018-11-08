@@ -3,6 +3,7 @@ import path from 'path'
 import webpack from 'webpack'
 
 export default {
+  mode: config.envProduction ? 'production' : 'development',
   devtool: '',
   entry: [
     path.join(__dirname, `${config.tasks.webpack.src}`)
@@ -16,8 +17,8 @@ export default {
       {
         enforce: 'pre',
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'standard-loader'
+        use: 'standard-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.js$/,
