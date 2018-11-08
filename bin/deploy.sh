@@ -36,7 +36,7 @@ renovate.json
 !/exampleSite/content
 !/exampleSite/static" > .gitignore
 
-openssl aes-256-cbc -K $encrypted_58ce1a42e263_key -iv $encrypted_58ce1a42e263_iv -in .travis_key.enc -out ~/.ssh/id_rsa -d
+openssl aes-256-cbc -K $encrypted_76f8f3dbf0db_key -iv $encrypted_76f8f3dbf0db_iv -in .travis_key.enc -out ~/.ssh/id_rsa -d
 chmod 600 ~/.ssh/id_rsa
 echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 git config --global user.name "Travis CI"
